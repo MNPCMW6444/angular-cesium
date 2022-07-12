@@ -7,8 +7,6 @@
     <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
     <script src="index.js"></script>
     <script src="heroList.js"></script>
-    <script src="heroDetail.js"></script>
-    <script src="editableField.js"></script>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Cesium.js"></script>
     <link
@@ -16,9 +14,13 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+
+    <script>
+      const viewer = new Cesium.viewer("cesiumContainer");
+    </script>
   </head>
   <body ng-app="heroApp">
-    <hero-list></hero-list>
+    <div id="cesiumContainer"></div>
   </body>
 </html>
 
